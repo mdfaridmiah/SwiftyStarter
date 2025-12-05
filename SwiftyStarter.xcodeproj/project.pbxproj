@@ -31,6 +31,7 @@
 		02B62BAE2E662E14008FB7FF /* SwiftfulFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 02B62BAD2E662E14008FB7FF /* SwiftfulFirestore */; };
 		02B62BB02E662E60008FB7FF /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 02B62BAF2E662E60008FB7FF /* FirebaseRemoteConfig */; };
 		02B62BB22E662E85008FB7FF /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 02B62BB12E662E85008FB7FF /* FirebaseStorage */; };
+		75C982172EE29CA600D566B3 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 75C982162EE29CA600D566B3 /* Factory */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +118,7 @@
 				0207BD952EA0958200E46D93 /* SwiftfulGamificationFirebase in Frameworks */,
 				0207BD982EA0958B00E46D93 /* SwiftfulGamification in Frameworks */,
 				028200B32EA3434D0004887E /* SwiftfulDataManagers in Frameworks */,
+				75C982172EE29CA600D566B3 /* Factory in Frameworks */,
 				028F9BD72CED155A009B9F48 /* SwiftfulAuthUI in Frameworks */,
 				02B62BB22E662E85008FB7FF /* FirebaseStorage in Frameworks */,
 				02B62BB02E662E60008FB7FF /* FirebaseRemoteConfig in Frameworks */,
@@ -256,6 +258,7 @@
 				028200B22EA3434D0004887E /* SwiftfulDataManagers */,
 				028200B52EA3437B0004887E /* SwiftfulDataManagersFirebase */,
 				0200345A2EAC73C700D87C8F /* SwiftfulOnboarding */,
+				75C982162EE29CA600D566B3 /* Factory */,
 			);
 			productName = SwiftyStarter;
 			productReference = 028F9B532CECF2C2009B9F48 /* SwiftyStarter.app */;
@@ -315,6 +318,7 @@
 				028200B12EA3434D0004887E /* XCRemoteSwiftPackageReference "SwiftfulDataManagers" */,
 				028200B42EA3437B0004887E /* XCRemoteSwiftPackageReference "SwiftfulDataManagersFirebase" */,
 				020034592EAC73C700D87C8F /* XCRemoteSwiftPackageReference "SwiftfulOnboarding" */,
+				75C982152EE29CA600D566B3 /* XCRemoteSwiftPackageReference "Factory" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 028F9B542CECF2C2009B9F48 /* Products */;
@@ -803,7 +807,7 @@
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftyStarter/SupportingFiles/Preview Content\"";
-				DEVELOPMENT_TEAM = 9JN8RSJMX3;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -852,7 +856,7 @@
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftyStarter/SupportingFiles/Preview Content\"";
-				DEVELOPMENT_TEAM = 9JN8RSJMX3;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -1103,6 +1107,14 @@
 				minimumVersion = 11.0.0;
 			};
 		};
+		75C982152EE29CA600D566B3 /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1225,6 +1237,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 02B62BA02E662DC3008FB7FF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		75C982162EE29CA600D566B3 /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75C982152EE29CA600D566B3 /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
